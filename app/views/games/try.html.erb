@@ -1,0 +1,22 @@
+<!-- <h1>Number was: <%= @input_num %></h1>
+<h2><%= @winstatus %></h2>
+<hr/>
+<form action="try" method="get">
+  <input type="text" name="number"/>
+  <input type="submit" value="Submit Number"/>
+</form> -->
+
+<div id ="jumbo" class="jumbotron">
+<div class="container">
+  <h1>Hi-Lo Game!</h1>
+  <p>
+     Welcome <%= @user_id %><br />Choose a number between 0 and 100.<br> Your last choice was: <%= @input_num %>
+  </p>
+  <h2><%= @winstatus%></h2>
+  <p>
+    <form class="form-inline" action="try" method="get">
+     <input class="form-control mr-sm-2" type="text" name="number" placeholder="Number">
+     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+    </form>
+</div>
+</div>

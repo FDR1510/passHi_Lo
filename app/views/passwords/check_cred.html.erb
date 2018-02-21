@@ -1,0 +1,15 @@
+<div id ="jumbo" class="jumbotron">
+<div class="container">
+  <h1>Hello!</h1>
+  <p>
+     Please create a User Name and Password.
+  </p>
+  <h2><%= @cred_status%></h2>
+  <p>
+    <form class="form-inline" action="check_cred" method="get">
+     <input class="form-control mr-sm-2" type="text" name="user_id" placeholder="User Name">
+     <input class="form-control mr-sm-2" type="password" name="password" placeholder="Password">
+     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+    </form>
+</div>
+</div>
